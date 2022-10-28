@@ -25,19 +25,18 @@ function setup() {
 }
 
 function draw() {
-
   switch (curCursor) {
     case 'pen':
-      cursor('images/pen.png');
+      cursor('images/cursors/pen.png');
       break;
     case 'brush':
-      cursor('images/brush.png');
+      cursor('images/cursors/brush.png');
       break;
     case 'bucket':
-      cursor('images/bucket.png');
+      cursor('images/cursors/bucket.png');
       break;
     case 'eraser':
-      cursor('images/eraser.png');
+      cursor('images/cursors/eraser.png');
       break;
     default:
       cursor(CROSS);

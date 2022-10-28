@@ -8,10 +8,9 @@ MockPaint is a pared-down clone of MS Paint created with [P5.js](https://p5js.or
 Currently you can:
 
 - Draw with a pen or brush
-- Set a brush width (max 1000)
+- Set a brush width (max 980px)
 - Erase your work
-- Choose from 8 colors
-- Change the background color with bucket
+- Choose from 12 colors
 - Clear the canvas
 
 Still to be implemented:
@@ -21,6 +20,8 @@ Still to be implemented:
 - Choose your own color palette
 - Switch between 2 primary colors
 - UI Themes
+- Undo actions
+- Save your work
 
 #### Setup
 
