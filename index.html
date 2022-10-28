@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MockPaint</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mock ms-paint build with P5.js!">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- P5.js -->
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <div class="command-palette">
+    <button class="cmd" onclick="selectPen()">pen</button>
+    <button class="cmd" onclick="selectBrush()">brush</button>
+    <button class="cmd" onclick="selectBucket()">bucket</button>
+    <button class="cmd" onclick="selectEraser()">eraser</button>
+    <button class="cmd" onclick="clearScreen()">clear screen</button>
+
+    <label for="brushSize">Brush Size(px)</label>
+    <input id="brushSize" type="number" min="0" max="980" value="12" onChange="brushSize(this)">
+
+    <button class="color" id="black" style="background-color: black;" onClick="brushColor(this)"></button>
+    <button class="color" id="white" style="background-color: white" onClick="brushColor(this)"></button>
+    <button class="color" id="red" style="background-color: red" onClick="brushColor(this)"></button>
+    <button class="color" id="orange" style="background-color: orange" onClick="brushColor(this)"></button>
+    <button class="color" id="yellow" style="background-color: yellow" onClick="brushColor(this)"></button>
+    <button class="color" id="green" style="background-color: green" onClick="brushColor(this)"></button>
+    <button class="color" id="light-green" style="background-color: #affc41" onClick="brushColor(this)"></button>
+    <button class="color" id="blue" style="background-color: blue" onClick="brushColor(this)"></button>
+    <button class="color" id="light-blue" style="background-color: #90e0ef" onClick="brushColor(this)"></button>
+    <button class="color" id="indigo" style="background-color: indigo" onClick="brushColor(this)"></button>
+    <button class="color" id="violet" style="background-color: violet" onClick="brushColor(this)"></button>
+    <button class="color" id="brown" style="background-color: #774936" onClick="brushColor(this)"></button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
