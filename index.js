@@ -52,7 +52,7 @@ function draw() {
     : stroke(color(curColor))
 
   // Only draw if the mouse is pressed inside the canvas
-  // Currently, bucket only changes the background color
+  // Currently, bucket fills the screen with one color
   if ((mouseX >= 0) && (mouseX <= width) && (mouseY <= height) && (mouseY >= 0)) {
     if (mouseIsPressed === true) {
       curCursor == 'bucket'

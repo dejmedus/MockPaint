@@ -1,69 +1,70 @@
-*{
-  margin: 0;
-  padding:0;
-  font-family: 'Trispace', sans-serif;
+* {
+  font-family: "Trispace", sans-serif;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
-body{
-  display: grid;
-  justify-content: center;
+body {
   background-color: rgb(248, 248, 248);
   color: rgb(57, 57, 57);
+  display: grid;
+  justify-content: center;
 }
 canvas {
+  box-shadow: #67d2fd 0px 0px 0px 2px, rgb(196, 255, 107) 0px 0px 0px 3px,
+    #fffc5f 0px 0px 0px 4px, #ffba60 0px 0px 0px 5px, #ff4747 0px 0px 0px 6px;
   display: block;
-  box-shadow: #67d2fd 0px 0px 0px 2px, rgb(196, 255, 107) 0px 0px 0px 3px, #fffc5f 0px 0px 0px 4px, #ffba60 0px 0px 0px 5px, #ff4747 0px 0px 0px 6px;
 }
-.topbar{
+.topbar {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 1em 0;
   gap: 0.2em;
+  padding: 1em 0;
+}
+.command-palette {
   align-items: center;
+  display: flex;
+  flex: 1;
+  gap: 0.4em;
 }
-.command-palette{
- flex: 1;
- display: flex;
- gap: 0.4em;
- align-items: center;
-}
-.cmd{
-  border: none;
+.cmd {
   background-color: rgba(255, 255, 255, 0);
-  width: 26px;
+  border: none;
   padding: 0.2em;
+  width: 26px;
 }
-.cmd:hover{
+.cmd:hover {
   opacity: 50%;
 }
-.cmd img{
-  width: auto;
+.cmd img {
   height: 18px;
+  width: auto;
 }
-.brushSize{
+.brushSize {
   min-width: 140px;
 }
-.brushSize label{
+.brushSize label {
   font-size: 0.9em;
   text-align: end;
 }
-.brushSize input{
-  border: 4px solid #9ee4ff;
+.brushSize input {
   background-color: #9ee4ff;
   border-radius: 24px;
-  padding: 0 0.2em;
+  border: 4px solid #9ee4ff;
   color: rgb(57, 57, 57);
+  padding: 0 0.2em;
 }
-.colorPalette{
+.colorPalette {
   padding: 0 0.4em;
 }
-.color{
+.color {
+  border-radius: 16px;
+  border: 1px solid #e4e2db;
   height: 18px;
   width: 18px;
-  border: 1px solid #e4e2db;
-  border-radius: 16px;
 }
-.color:hover{
+.color:hover {
   border: 1px solid black;
 }
 
@@ -71,13 +72,13 @@ canvas {
   body {
     padding: 0.4em 1em;
   }
-  .topbar{
+  .topbar {
     padding: 0.4em 0 1em 0;
   }
-  .brushSize{
+  .brushSize {
     margin-left: auto;
   }
-  canvas{
+  canvas {
     width: 95vw !important;
   }
 }
@@ -86,4 +87,3 @@ canvas {
     padding: 0.4em 1em;
   }
 }
-
