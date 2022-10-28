@@ -26,3 +26,8 @@ Still to be implemented:
 #### Setup
 
 To setup and view this project in the browser I used the p5.vscode and Live Server VSCode extensions. For alternatives, see the P5.js [Get Started](https://p5js.org/get-started/) guide.
+
+<details><summary>View Project</summary>
+<img width="697" alt="MockPaint2" src="https://user-images.githubusercontent.com/59973863/198532240-d6c5dbb8-ea74-437b-8a49-b2a762248cb5.png">
+</details>
+
